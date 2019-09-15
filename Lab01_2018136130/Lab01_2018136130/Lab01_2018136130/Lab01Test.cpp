@@ -39,6 +39,10 @@ void testCar() {
 	myCar.speedUp();
 	yourCar.display();
 	myCar.display();
+
+	myCar.bTurbo = 1;
+	myCar.speedUp();
+	myCar.display();
 }
 
 void main()

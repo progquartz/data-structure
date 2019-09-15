@@ -27,11 +27,25 @@ void testPolynomial() {
 	a.display();
 	a.display();
 }
-		
+
+void testCar() {
+	Car			yourCar(80, "your car", 4);
+	SportsCar	myCar(100, "MY car", 4);
+
+	yourCar.display();
+	myCar.display();
+
+	yourCar.speedUp();
+	myCar.speedUp();
+	yourCar.display();
+	myCar.display();
+}
+
 void main()
 {
 	testTask01();
 	testPolynomial();
+	testCar();
 	system("pause");
 }
 

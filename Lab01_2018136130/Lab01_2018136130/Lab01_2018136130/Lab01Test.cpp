@@ -47,9 +47,9 @@ void testCar() {
 
 void main()
 {
-	testTask01();
+	//testTask01();
 	testPolynomial();
-	testCar();
+	//testCar();
 	system("pause");
 }
 

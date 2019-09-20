@@ -10,12 +10,12 @@ private:
 	char data[MAX_STACK_SIZE];
 public:
 	CharArrayStack();
-	bool isEmpty() const;
-	bool isFull() const;
-	void push(const char& e);
-	char pop();
-	char peek();
-	int size() const;
+	bool isEmpty() const;// if it is empty, it returms 1 else, it returns 0.
+	bool isFull() const;// if it is full, it returns 1, else, it returns 0;
+	void push(const char& e);// pushes the data into the data structure. the data got into it pops first.
+	char pop();// pops the data info which pushed lastly.
+	char peek();// peek out the data in the data structure/
+	int size() const;// returns the size of data structure.
 	friend ostream& operator<<(ostream& os, const CharArrayStack& ias);
 };
 

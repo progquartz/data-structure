@@ -5,11 +5,11 @@
 using namespace std;
 
 class Student {
-private:
+private: // student private members including id, name and departure.
 	int id;
 	string name;
 	string dept;
-public:
+public: // public methods are constructor and the operation overriding.
 	Student(int sid=0, string sname="", string sdept="");
 	friend ostream& operator<<(ostream& os, const Student& s);
 };

@@ -4,18 +4,18 @@
 
 using namespace std;
 
-class IntArrayStack{
+class IntArrayStack{// Stack Data Structure made for array of int
 private:
 	int top;
 	int data[MAX_STACK_SIZE];
 public:
 	IntArrayStack();
-	bool isEmpty() const;
-	bool isFull() const;
-	void push(const int& e);
-	int pop();
-	int peek();
-	int size() const;
+	bool isEmpty() const;		// if it is empty, it returms 1 else, it returns 0.
+	bool isFull() const;		// if it is full, it returns 1, else, it returns 0;
+	void push(const int& e);// pushes the data into the data structure. the data got into it pops first.
+	int pop();// pops the data info which pushed lastly.
+	int peek();// peek out the data in the data structure/
+	int size() const;// returns the size of data structure.
 	friend ostream& operator<<(ostream& os, const IntArrayStack& ias);
 };
 

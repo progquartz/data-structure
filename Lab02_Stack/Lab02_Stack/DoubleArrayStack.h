@@ -4,18 +4,18 @@
 
 using namespace std;
 
-class DoubleArrayStack {
+class DoubleArrayStack {// Stack Data Structure made for array of double.
 private:
 	int top;
 	double data[MAX_STACK_SIZE];
 public:
 	DoubleArrayStack();
-	bool isEmpty() const;
-	bool isFull() const;
-	void push(const double& e);
-	double pop();
-	double peek();
-	int size() const;
+	bool isEmpty() const;// if it is empty, it returms 1 else, it returns 0.
+	bool isFull() const;// if it is full, it returns 1, else, it returns 0;
+	void push(const double& e);// pushes the data into the data structure. the data got into it pops first.
+	double pop();// pops the data info which pushed lastly.
+	double peek();// peek out the data in the data structure/
+	int size() const;// returns the size of data structure.
 	friend ostream& operator<<(ostream& os, const DoubleArrayStack& ias);
 };
 
